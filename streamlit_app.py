@@ -52,4 +52,4 @@ streamlit.dataframe(my_data_rows)
 add_my_fruit = requests.get("https://fruityvice.com/api/fruit/"+"jackfruit")
 # take the json version of the response and normalize it
 add_my_fruit_normalized = pandas.json_normalize(add_my_fruit.json())
-streamlit.dataframe(add_my_fruit)
+streamlit.dataframe(add_my_fruit_normalized)
