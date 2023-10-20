@@ -48,4 +48,6 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The Fruit Load List Contains:")
 streamlit.dataframe(my_data_rows)
 
-
+# allow the end user to add a fruit to the list
+add_my_fruit = requests.get("https://fruityvice.com/api/fruit/"+"jackfruit")
+streamlit.dataframe(add_my_fruit)
